@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: skyblue ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.board{
+    width: 320px;
+    height: 320px;
+    background-image: url(./grid.png);
+    background-size: cover;
+    border-radius: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    gap: 5px;
+}
+
+.circle{
+    background-image: url(./circle.png);
+    background-size: cover;
+    border-image-repeat: no-repeat;
+}
+
+.cross{
+    background-image: url(./cross.png);
+    background-size: cover;
+    border-image-repeat: no-repeat;
+}
+
+#message{
+    width: 180px;
+    height: 50px;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+#message:hover {
+    cursor: pointer;
+}
+
+#troll{
+    background-size: cover;
+}
